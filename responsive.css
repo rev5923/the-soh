@@ -1,0 +1,95 @@
+/* タブレット */
+@media (max-width: 1200px){
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .title h2 {
+    font-size: 15px;
+  }
+
+  .greetings-wrapper, .greetings-left, .greetings-right {
+    text-align: center;
+    display:inline-block;
+    width: 100%;
+  }
+
+  .contact-wrapper {
+    text-align: center;
+  }
+
+  .contact-form {
+    width:100%;
+    display:inline-block;
+    text-align:center;    
+  }
+
+  .contact-form p {
+    text-align: center;
+  }
+
+  input {
+    width: 400px;
+  }
+}
+/* タブレットここまで */
+
+
+
+/* スマートフォン */
+@media (max-width: 670px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .header-menu a {
+    display: none;
+  }
+
+
+  .header-menu-accordion {
+    display: block;
+  }
+
+  .introduction p {
+    font-size: 13px;
+  }
+
+  .br-p {
+    display: block;
+  }
+
+  .background p {
+    font-size: 13px;
+  }
+  .contact-form {
+    width:100%;
+    display:inline-block;
+    text-align:center;    
+  }
+
+  .contact-form p {
+    text-align: center;
+  }
+
+  input {
+    width: 300px;
+    height: 40px;
+  }
+
+  textarea {
+    width: 350px;
+  }
+
+}
+/* スマートフォンここまで */
