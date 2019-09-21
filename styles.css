@@ -1,0 +1,305 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+
+
+/* ヘッダー */
+header {
+  background-color: rgba(17, 23, 24, 0.863);
+  background-size: cover;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.header {
+  overflow:hidden;
+}
+
+.header-logo {
+  float: left;
+  line-height: 60px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #fff;
+  padding-left: 5px;
+}
+
+.header-logo:hover {
+  background-color: #333;
+  opacity: 1;
+}
+
+
+
+.header-menu {
+  float: right;
+}
+
+.header-menu li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 60px;
+}
+
+.header-menu li:hover {
+  background-color: #333;
+  opacity: 1;
+}
+
+
+.header-menu a {
+  color: #fff;
+}
+/* ヘッダーここまで */
+
+/* トップ */
+.top-wrapper {
+  padding-top: 180px;
+  height: 500px;
+  background: linear-gradient( to bottom, rgba(0, 0, 0, 0.712), rgba(255, 255, 255, 0.363)),
+  url(img/top.jpg);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.title h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.title h2 {
+  margin-top: 50px;
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+
+.title h2:hover {
+  letter-spacing: 10px;
+}
+
+/* トップここまで */
+
+.heading {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  letter-spacing: 5px;
+}
+
+/* ここからプロフィール */
+.profile-wrapper {
+  background-color: rgb(25, 18, 27);
+  height: 100%;
+  padding-top: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.profile-icon img {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 250px;
+  border-radius: 150px;
+  border: 2px solid black;
+}
+
+.profile-icon h2 {
+  letter-spacing: 3px;
+}
+
+.sns img {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  opacity: 0.8;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.sns img:hover{
+  opacity: 1;
+}
+
+
+.introduction {
+  margin-top: 30px;
+}
+
+.introduction p {
+  padding-top: 20px;
+}
+
+.background {
+  margin-top: 80px;
+  padding-bottom: 150px;
+}
+
+.background p {
+  padding-top: 10px;
+
+}
+
+/* プロフィールここまで */
+
+/* ここからGreetings */
+
+.greetings-wrapper {
+  height: 100%;
+  background-color: rgb(244, 244, 255);
+  color: #333;
+  overflow: hidden;
+}
+
+.greetings-icon img {
+  padding-top: 20px;
+  height: 260px;
+  width: 260px;
+  border-radius: 50px;
+  box-shadow: 10px 10px #333;
+}
+
+.greetings-left {
+  float: left;
+}
+
+.greetings-right {
+  float: right;
+  padding-top: 300px;
+  padding-bottom: 180px;
+}
+
+.greetings-right p {
+  text-align: right;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Greetingsここまで */
+
+/* ここからWorks */
+.works-wrapper {
+  text-align: center;
+  height: 900px;
+  background-color: white;
+}
+
+.works-wrapper span {
+  color: crimson;
+}
+/* Worksここまで */
+
+/* ここからcontact */
+.contact-wrapper {
+  height: 100%;
+  padding-bottom: 180px;
+  color: whitesmoke;
+  background: linear-gradient( to top, rgb(0, 0, 0), rgb(36, 36, 36));
+  overflow: hidden;
+}
+
+.contact-wrapper h3 {
+  padding-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.contact-wrapper p {
+  line-height: 30px;
+}
+
+.contact-form {
+  float: left;
+  margin-top: 50px;
+
+}
+
+.contact-form p {
+  padding:15px 0;
+}
+
+
+.contact-form span {
+  color: crimson;
+}
+
+input {
+  border-radius: 4px;
+  height: 25px;
+  transition: all 0.5s;
+}
+
+input:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+textarea {
+  border-radius: 4px;
+  width: 400px;
+  height: 100px;
+  transition: all 0.5s;
+}
+
+textarea:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+.submit {
+  border-radius: 4px;
+  height: 25px;
+  width: 100px;
+  letter-spacing: 2px;
+  padding: 16px 24px;
+  line-height: 1px;
+  border: none;
+  transition: all 0.5s;
+}
+
+.submit:hover {
+  background-color: rgb(138, 138, 138);
+}
+
+
+/* contactここまで */
+
+/* footerここから */
+footer {
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+}
+
+/* footerここまで */
+
+
