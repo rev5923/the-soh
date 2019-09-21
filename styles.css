@@ -301,6 +301,7 @@ textarea:hover {
   border: none;
   transition: all 0.5s;
   cursor: pointer;
+  color: #fff;
 }
 
 
