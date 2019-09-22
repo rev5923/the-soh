@@ -93,6 +93,10 @@ header {
   cursor: pointer;
 }
 
+.fa-times {
+  font-size: 30px;
+  cursor: pointer;
+}
 
 
 .responsive-menu li {
