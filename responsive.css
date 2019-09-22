@@ -1,5 +1,5 @@
 /* タブレット */
-@media (max-width: 1200px){
+@media (max-width: 1199px){
   .container {
     width: 100%;
     margin: 0 auto;
@@ -42,7 +42,7 @@
 
 
 /* スマートフォン */
-@media (max-width: 670px) {
+@media (max-width: 559px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -56,10 +56,16 @@
     display: none;
   }
 
-
-  .header-menu-accordion {
+  .responsive-menu {
     display: block;
   }
+
+  
+
+  .title h2 {
+    font-size: 15px;
+  }
+
 
   .introduction p {
     font-size: 13px;
@@ -93,3 +99,67 @@
 
 }
 /* スマートフォンここまで */
+
+
+/* スマートフォン iphone5, se */
+@media (max-width: 415px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .header-menu a {
+    display: none;
+  }
+
+  .responsive-menu {
+    display: block;
+  }
+
+
+
+  .title h1 {
+    font-size: 30px;
+  }
+
+  .title h2 {
+    font-size: 15px;
+  }
+
+
+  .introduction p {
+    font-size: 13px;
+  }
+
+  .br-p {
+    display: block;
+  }
+
+  .background p {
+    font-size: 13px;
+  }
+  .contact-form {
+    width:100%;
+    display:inline-block;
+    text-align:center;    
+  }
+
+  .contact-form p {
+    text-align: center;
+  }
+
+  input {
+    width: 200px;
+    height: 40px;
+  }
+
+  textarea {
+    width: 250px;
+  }
+
+}
+/* スマートフォン iphone5, seここまで */

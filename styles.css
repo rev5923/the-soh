@@ -50,6 +50,7 @@ header {
   letter-spacing: 4px;
   color: #fff;
   padding-left: 5px;
+  cursor: pointer;
 }
 
 .header-logo:hover {
@@ -77,19 +78,39 @@ header {
 
 .header-menu a {
   color: #fff;
+  display: block;
 }
 
-.header-menu-accordion {
-  float: right;
+
+.responsive-menu {
   display: none;
-  cursor: pointer;
+  float: right;
+  margin: 15px;
 }
 
 .fa-bars {
-  line-height: 20px;
-  margin-top: 20px;
-  font-size: 25px;
+  font-size: 30px;
+  cursor: pointer;
 }
+
+
+
+.responsive-menu li {
+  padding: 10px;
+  margin: 3px;
+  background-color: black;
+  display: none;
+}
+
+
+.responsive-menu a {
+  color: #fff;
+}
+
+.responsive-menu li:hover{
+  background-color: purple;
+}
+
 
 
 /* ヘッダーここまで */
@@ -116,10 +137,6 @@ header {
   transition: all 0.5s;
 }
 
-.title h2:hover {
-  letter-spacing: 10px;
-}
-
 /* トップここまで */
 
 .heading {
@@ -143,6 +160,7 @@ header {
   height: 250px;
   border-radius: 150px;
   border: 2px solid black;
+  width: 260px;
 }
 
 .profile-icon h2 {
@@ -292,12 +310,12 @@ textarea:hover {
 }
 
 .submit {
-  border-radius: 4px;
   height: 25px;
   width: 100px;
   letter-spacing: 2px;
   padding: 16px 24px;
   line-height: 1px;
+  border-radius: 4px;
   border: none;
   transition: all 0.5s;
   cursor: pointer;
@@ -308,8 +326,6 @@ textarea:hover {
 .submit:hover {
   background-color: rgb(138, 138, 138);
 }
-
-
 
 
 /* contactここまで */
@@ -325,4 +341,5 @@ footer {
 }
 
 /* footerここまで */
+
 
