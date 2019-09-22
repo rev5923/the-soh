@@ -6,18 +6,22 @@ $(function(){
       'scrollTop': 0
     }, 500);
   });
-});
+
+
+  
 
   // ヘッダーメニュー
-$('header a').click(function() {
-  var id = $(this).attr('href');
-  var position = $(id).offset().top;
+  $('header a').click(function() {
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
   
-  $('html,body').animate({
+    $('html,body').animate({
     'scrollTop': position
   }, 500);
-  
-  // レスポンシブ メニュー 
+  });
+
+
+// レスポンシブ メニュー 
   $(document).on("click", ".responsive-menu", function() {
   // clickイベントの処理
   var menuicon =$('.responsive-menu i');
@@ -30,5 +34,5 @@ $('header a').click(function() {
 
   $('.responsive-menu li').slideToggle();
   });
-  
+
 });
