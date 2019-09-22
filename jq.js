@@ -6,23 +6,27 @@ $(function(){
       'scrollTop': 0
     }, 500);
   });
-});
+
+
+  
 
   // ヘッダーメニュー
-$('header a').click(function() {
-  var id = $(this).attr('href');
-  var position = $(id).offset().top;
+  $('header a').click(function() {
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
   
-  $('html,body').animate({
+    $('html,body').animate({
     'scrollTop': position
   }, 500);
-  
-  
-  
+  });
+
+
+
   $('#responsive-btn').click(function() {
     $('.responsive-menu li').slideToggle();
   });
   
 
 
+  
 });
