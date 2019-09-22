@@ -17,16 +17,18 @@ $('header a').click(function() {
     'scrollTop': position
   }, 500);
   
-  $('#responsive-btn').hover(
-    function() {
-      $('.responsive-menu li').slideToggle();
-    },
-    function() {
-      $('.responsive-menu li').slideToggle();
+  // レスポンシブ メニュー 
+  $(document).on("click", ".responsive-menu", function() {
+  // clickイベントの処理
+  var menuicon =$('.responsive-menu i');
 
+  if (menuicon.hasClass('fa-bars')){
+   menuicon.removeClass('fa-bars').addClass('fa-times');
+  }else if(menuicon.hasClass('fa-times')){
+    menuicon.removeClass('fa-times').addClass('fa-bars');
+  }
+
+  $('.responsive-menu li').slideToggle();
   });
-  
-  
-  
   
 });
