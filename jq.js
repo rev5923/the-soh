@@ -16,4 +16,13 @@ $('header a').click(function() {
   $('html,body').animate({
     'scrollTop': position
   }, 500);
+  
+  
+  
+  $('#responsive-btn').click(function() {
+    $('.responsive-menu li').slideToggle();
+  });
+  
+
+
 });
