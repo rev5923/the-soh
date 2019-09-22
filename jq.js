@@ -21,7 +21,7 @@ $(function(){
   });
 
 
-  // レスポンシブ メニュー 
+// レスポンシブ メニュー 
   $(document).on("click", ".responsive-menu", function() {
   // clickイベントの処理
   var menuicon =$('.responsive-menu i');
@@ -35,6 +35,4 @@ $(function(){
   $('.responsive-menu li').slideToggle();
   });
 
-
-  
 });
