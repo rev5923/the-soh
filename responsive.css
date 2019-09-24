@@ -13,11 +13,6 @@
     font-size: 15px;
   }
 
-  .greetings-wrapper, .greetings-left, .greetings-right {
-    text-align: center;
-    display:inline-block;
-    width: 100%;
-  }
 
   .contact-wrapper {
     text-align: center;

@@ -22,17 +22,26 @@ $(function(){
 
 
 // レスポンシブ メニュー 
-  $(document).on("click", ".responsive-menu", function() {
+  $(document).on("click", "#responsive-btn", function() {
   // clickイベントの処理
   var menuicon =$('.responsive-menu i');
 
   if (menuicon.hasClass('fa-bars')){
    menuicon.removeClass('fa-bars').addClass('fa-times');
+   $('.responsive-menu li').slideToggle(500);
+
   }else if(menuicon.hasClass('fa-times')){
+    $('.responsive-menu li').slideToggle(500);
     menuicon.removeClass('fa-times').addClass('fa-bars');
   }
 
-  $('.responsive-menu li').slideToggle();
   });
+
+
+
+
+
+
+
 
 });

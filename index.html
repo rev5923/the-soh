@@ -30,13 +30,11 @@
       <div class="header">
         <div class="container">
             <div class="top-btn"><h3 class="header-logo">The Soh</h3></div>
-
           <div class="responsive-menu">
             <i class="fas fa-bars" id="responsive-btn"></i>
               <ul>
                 <nav>
                   <li id="responsive-menu-top"><a href="#profile">Profile</a></li>
-                  <li><a href="#greetings">Greetings</a></li>
                   <li><a href="#works">Works</a></li>
                   <li><a href="#contact">Contact</a></li>               
                 </nav>
@@ -45,7 +43,6 @@
           <div class="header-menu">
               <ul> 
               <li><a href="#profile">Profile</a></li>
-              <li><a href="#greetings">Greetings</a></li>
               <li><a href="#works">Works</a></li>
               <li><a href="#contact">Contact</a></li>
               </ul>
@@ -99,31 +96,13 @@
     </div>
     <!-- プロフィールここまで -->
 
-    <!-- ここからGreetings -->
-    <div class="greetings-wrapper" id="greetings">
-      <div class="container">
-        <div class="greetings-left">
-          <h1 class="heading">Greeting(s)</h1>
-          <div class="greetings-icon">
-            <img src="img/tumblr_pb24oqHb751wxqgkbo1_500.gif">
-          </div>
-        </div>
-        <div class="greetings-right">
-          <p>Hi there, My name is Soh.</p>
-          <p>This is the website I created for showing and confirming my cording skill.</p>
-          <p>I will output my knowledge here and seek the very best design.</p>
-          <p>So guys, stay tuned!</p>
-          <p>うんち</p>
-        </div>
-      </div>
-    </div>
-    <!-- Greetingsここまで -->
+
 
     <!-- ここからWorks -->
     <div class="works-wrapper" id="works">
       <div class="container">
         <h1 class="heading">Work<span>s</span></h1>
-        
+        <div class="box">サンプル</div>
       </div>
     </div>
     <!-- Worksここまで -->
@@ -136,16 +115,18 @@
         <h3>Feel free to get in touch!</h3>
         <p>コーディングのご依頼、随時承っております。</p>
         <p>SNSでのDMからもご連絡いただけます。</p>
-        <div class="contact-form">
-          <p>Your name<span> (required)</span></p>
-          <input>
-          <p>Your E-mail<span> (required)</span></p>
-          <input>
-          <p>Message<span> (required)</span></p>
-          <textarea></textarea>
-          <br><br>
-          <button type="submit" class="submit">Send</button>
-        </div>
+        <form>
+          <div class="contact-form">
+            <p>Your name<span> (required)</span></p>
+            <input>
+            <p>Your E-mail<span> (required)</span></p>
+            <input>
+            <p>Message<span> (required)</span></p>
+            <textarea></textarea>
+            <br><br>
+            <button type="submit" class="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <!-- Contactここまで -->
@@ -157,7 +138,9 @@
     </footer>
     <!-- footerここまで -->
 
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   </body>
 </html>

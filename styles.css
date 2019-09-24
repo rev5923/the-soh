@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Hiragino Kaku Gothic ProN";
-  background-color: #333;
+  background-color: black;
 }
+
+
 
 li {
   list-style: none;
@@ -47,17 +53,23 @@ header {
 .header-logo {
   float: left;
   line-height: 60px;
-  font-size: 20px;
-  letter-spacing: 4px;
-  color: #fff;
   padding-left: 5px;
+  letter-spacing: 4px;
+  font-size: 20px;
+  color: #fff;
   cursor: pointer;
+  transition: 0.5s all ease 0s;
 }
+
 
 .header-logo:hover {
   background-color: #333;
   opacity: 1;
 }
+
+
+
+
 
 
 .header-menu {
@@ -69,6 +81,7 @@ header {
   padding-right: 10px;
   padding-left: 10px;
   line-height: 60px;
+  transition: 0.5s all ease 0s;
 }
 
 .header-menu li:hover {
@@ -119,7 +132,7 @@ header {
 }
 
 .responsive-menu li:hover{
-  background-color: purple;
+  background-color: grey;
 }
 /* レスポンシブメニューバーここまで */
 /* ヘッダーここまで */
@@ -133,6 +146,7 @@ header {
   background-size: cover;
   text-align: center;
   color: #fff;
+  cursor: default;
 }
 
 .title h1 {
@@ -152,13 +166,14 @@ header {
   padding-top: 100px;
   padding-bottom: 80px;
   letter-spacing: 5px;
+  cursor: default;
+
 }
 
 /* ここからプロフィール */
 .profile-wrapper {
   background-color: rgb(25, 18, 27);
   height: 100%;
-  padding-top: 0;
   color: #fff;
   text-align: center;
 }
@@ -175,6 +190,9 @@ header {
 .profile-icon h2 {
   letter-spacing: 3px;
 }
+
+
+
 
 .sns img {
   width: 50px;
@@ -213,44 +231,9 @@ header {
 .br-p {
   display: none;
 }
-
-
 /* プロフィールここまで */
 
-/* ここからGreetings */
 
-.greetings-wrapper {
-  height: 100%;
-  background-color: rgb(244, 244, 255);
-  color: #333;
-  overflow: hidden;
-}
-
-.greetings-icon img {
-  padding-top: 20px;
-  height: 260px;
-  width: 260px;
-  border-radius: 50px;
-  box-shadow: 10px 10px #333;
-}
-
-.greetings-left {
-  float: left;
-}
-
-.greetings-right {
-  float: right;
-  padding-top: 300px;
-  padding-bottom: 180px;
-}
-
-.greetings-right p {
-  padding-bottom: 20px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-/* Greetingsここまで */
 
 /* ここからWorks */
 .works-wrapper {
@@ -262,6 +245,32 @@ header {
 .works-wrapper span {
   color: crimson;
 }
+
+
+.works-wrapper h1 {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.works-wrapper h1::after {
+  position: absolute;
+  top: 65%;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+.works-wrapper h1:hover::after {
+  transform: scale(1, 1);
+  
+}
+
+
+
 /* Worksここまで */
 
 /* ここからcontact */
@@ -350,8 +359,5 @@ footer {
 }
 
 /* footerここまで */
-
-
-
 
 
