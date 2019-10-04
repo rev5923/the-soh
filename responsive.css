@@ -13,6 +13,9 @@
     font-size: 15px;
   }
 
+  .skills-wrapper {
+    margin:0;
+  }
 
   .contact-wrapper {
     text-align: center;
@@ -57,9 +60,13 @@
   }
 
   
-
   .title h2 {
     font-size: 15px;
+  }
+
+
+  .top-wrapper {
+    height: 690px;
   }
 
 
@@ -74,6 +81,8 @@
   .background p {
     font-size: 13px;
   }
+
+
   .contact-form {
     width:100%;
     display:inline-block;
@@ -139,6 +148,7 @@
   .background p {
     font-size: 13px;
   }
+
   .contact-form {
     width:100%;
     display:inline-block;
@@ -146,11 +156,12 @@
   }
 
   .contact-form p {
-    text-align: center;
+    padding:15px 0;
+    position: static;
   }
 
   input {
-    width: 200px;
+    width: 250px;
     height: 40px;
   }
 

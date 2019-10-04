@@ -28,10 +28,9 @@ $(function(){
 
   if (menuicon.hasClass('fa-bars')){
    menuicon.removeClass('fa-bars').addClass('fa-times');
-   $('.responsive-menu li').slideToggle(500);
-
+   $('.responsive-menu li').fadeToggle(500);
   }else if(menuicon.hasClass('fa-times')){
-    $('.responsive-menu li').slideToggle(500);
+    $('.responsive-menu li').fadeToggle(500);
     menuicon.removeClass('fa-times').addClass('fa-bars');
   }
 

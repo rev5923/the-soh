@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   background-color: black;
 }
 
@@ -69,9 +69,6 @@ header {
 
 
 
-
-
-
 .header-menu {
   float: right;
 }
@@ -92,8 +89,17 @@ header {
 
 .header-menu a {
   color: #fff;
-  display: block;
+  display: inline-block;
+  transition: 0.5s all ease 0s;
 }
+
+
+.header-menu a:hover {
+  letter-spacing: 3px;
+}
+
+
+
 
 /* レスポンシブ メニューバー */
 .responsive-menu {
@@ -140,7 +146,7 @@ header {
 /* トップ */
 .top-wrapper {
   padding-top: 180px;
-  height: 500px;
+  height: 790px;
   background: linear-gradient( to bottom, rgba(0, 0, 0, 0.712), rgba(255, 255, 255, 0.363)),
   url(img/top.jpg);
   background-size: cover;
@@ -152,12 +158,13 @@ header {
 .title h1 {
   font-size: 60px;
   letter-spacing: 10px;
+
 }
 
 .title h2 {
   margin-top: 50px;
   letter-spacing: 3px;
-  transition: all 0.5s;
+  font-family: 'Caveat', cursive;
 }
 
 /* トップここまで */
@@ -233,7 +240,48 @@ header {
 }
 /* プロフィールここまで */
 
+/* Skills */
+.skills-wrapper {
+  text-align: center;
+  height: 1260px;
+  background-color: #f8f8f8;
+  margin: 0;
+}
 
+.skills-wrapper span {
+  color: #008db7;
+}
+
+.skill {
+  margin-bottom: 100px;
+}
+
+
+.skill img {
+  width: 20%;
+  height: 20%;
+}
+
+.jq img {
+  width: 15%;
+  height: 15%;
+}
+
+
+.skill h3 {
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.skill p {
+  padding-top: 8px;
+  color: gray;
+}
+
+
+
+
+/* Skillsここまで */
 
 /* ここからWorks */
 .works-wrapper {
@@ -266,7 +314,6 @@ header {
 }
 .works-wrapper h1:hover::after {
   transform: scale(1, 1);
-  
 }
 
 
@@ -278,8 +325,9 @@ header {
   height: 100%;
   padding-bottom: 180px;
   color: whitesmoke;
-  background: linear-gradient( to top, rgb(0, 0, 0), rgb(36, 36, 36));
+  background: linear-gradient( to top, rgb(0, 0, 0), rgb(48, 48, 48));
   overflow: hidden;
+  text-align: center;
 }
 
 .contact-wrapper h3 {
@@ -292,13 +340,14 @@ header {
 }
 
 .contact-form {
-  float: left;
   margin-top: 50px;
-
+  
 }
 
 .contact-form p {
   padding:15px 0;
+  position: relative;
+  right: 125px;
 }
 
 
@@ -309,6 +358,7 @@ header {
 input {
   border-radius: 4px;
   height: 25px;
+  width:400px;
   transition: all 0.5s;
 }
 
